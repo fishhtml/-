@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="style/reset.css">
+	<link type="text/css" rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css">
+	<script src="./js/jquery-3.2.1.min.js"></script>
+</head>
+<body class="greybg">
+	<header>
+		<div class="topBar">
+			<div class="comWidth">
+				<div class="leftArea">
+					<a href="#" class="collection">收藏</a>
+				</div>
+				<div class="rightArea">
+					欢迎来到慕课网！<a href="#">[注册]</a><a href="#">[登录]</a>
+				</div>
+			</div>
+		</div>
+		<div class="cart-logobar">
+			<div class="comWidth">
+				<div class="cart-logo">
+					<a href="#"><img src="image/imooclogo.png" alt="imoocHomePage"></a>
+				</div>
+				<div class="cart-shoppath">
+					<img src="image/shoppath.png" alt="">
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="comWidth">
+		<div class="cart-common">
+			<h1 class="cart-title">收货信息</h1>
+			<div class="cart-delivery">
+				<p>
+					<span>&nbsp&nbsp选择地区：</span><input type="text" value="北京市 海淀区 五环内" name="destination" id="destination">
+				</p>
+				<p>
+					<span>&nbsp&nbsp详细地址：</span><input type="text" placeholder="最多输入26个汉字" name="address" id="address">
+				</p>
+				<p>
+					<span>&nbsp&nbsp收货人：</span><input type="text" placeholder="最多输入26个汉字" name="name" id="name">
+				</p>
+				<p class="cart-phone">
+					<span>&nbsp&nbsp手机：</span><input type="tel" placeholder="+86" name="phone" id="phone" min="0">
+					或固定电话：<input type="tel" placeholder="区号">&nbsp;-&nbsp;<input type="tel" placeholder="电话号码">&nbsp;-&nbsp;<input type="tel" placeholder="分机号（可选）">
+				</p>
+				<p id="cart-botton">
+					<button>确认收货地址</button>
+				</p>
+			</div>
+		</div>
+		<div class="cart-common">
+			<h1 class="cart-title">支付方式</h1>
+			<div class="cart-payway">
+				<p>
+					<input type="radio" value="wechatpay" name="cart-payway" id="wechatpay" checked="checked">
+					<label for="wechatpay">微信支付</label>
+					&nbsp&nbsp&nbsp&nbsp<img src="./image/wechatlog.png" alt="wechatlogo"><span>用微信扫一扫就能支付！</span>
+				</p>
+				<p>
+					<input type="radio" value="payondelivery" name="cart-payway" id="payondelivery">
+					<label for="payondelivery">货到付款</label>
+					<span>&nbsp&nbsp&nbsp&nbsp送货上面后再付款，使用现金银行卡。</span>
+				</p>
+			</div>
+		</div>
+		<div class="cart-common">
+			<h1 class="cart-title">发票信息</h1>
+			<div class="invoice-info">
+				<form action="" method="post">
+					<p>
+						<input type="checkbox"  checked="checked" value="需要发票" name="invoice-needed" id="invoice-needed"><label for="invoice-needed">需要发票</label>
+					</p>
+					<p class="invoice-common">
+						<span>&nbsp&nbsp发票抬头：</span>
+						<select name="invoice-title" id="invoice-title">
+							<option value="business-voice" selected="selected">商业零售发票</option>
+							<option value="business-voice">商业零售发票</option>
+							<option value="business-voice">商业零售发票</option>
+							<option value="business-voice">商业零售发票</option>
+						</select>
+					</p>
+					<p class="invoice-common">
+						<span class="invoice-type">&nbsp&nbsp发票类型：</span>
+						<select name="invoice-type">
+							<option value="personal" selected="selected">个人</option>
+							<option value="enterprise" selected="selected">公司</option>
+						</select>
+						<input type="text" name="yourname" value="" placeholder="输入发票抬头">
+					</p>
+					<p class="invoice-submit">
+						<button type="submit" value="确定">确定</button>
+						<button type="button" value="cancel">取消</button>
+					</p>
+				</form>
+			</div>
+		</div>
+		<div class="cart-common">
+			<h1 class="cart-title">送货清单</h1>
+			<div class="cart-list-table">
+				<table>
+					<tr>
+						<th>商品名称</th>
+						<th>单价</th>
+						<th>返现</th>
+						<th>数量</th>
+						<th>小计</th>
+					</tr>
+					<tr class="cart-list-detail">
+						<td>
+							<img src="./image/products-cart.png" alt="">
+							<div>
+								<!-- <img src="./image/products-cart.png" alt=""> -->
+								<h1>Hisense海信BCD-202D 202升 三门冰箱（银色））</h1>
+								<p>[赠品] 保险盒、抽真空保鲜盒-海信冰洗赠品</p>
+								<p><a href="#">若您对包裹有特殊要求，请在此留言</a></p>
+							</div>
+						</td>
+						<td>￥<span>1459.00</span></td>
+						<td>￥<span>0.00</span></td>
+						<td>1</td>
+						<td>￥1459.00</td>
+					</tr>
+					<tr class="cart-list-detail">
+						<td>
+							<img src="./image/products-cart.png" alt="">
+							<div>
+								<!-- <img src="./image/products-cart.png" alt=""> -->
+								<h1>Hisense海信BCD-202D 202升 三门冰箱（银色））</h1>
+								<p>[赠品] 保险盒、抽真空保鲜盒-海信冰洗赠品</p>
+								<p><a href="#">若您对包裹有特殊要求，请在此留言</a></p>
+							</div>
+						</td>
+						<td>￥<span>1459.00</span></td>
+						<td>￥<span>0.00</span></td>
+						<td>1</td>
+						<td>￥1459.00</td>
+					</tr>
+				</table>
+				<div class="cart-list-outofblock">
+					<h1><i class="fa fa-info-circle" aria-hidden="true"></i><span>抱歉，一下商品暂时不能购买，已帮您自动移除，并扣除总价格您可以先购买其他商品。</span></h1>
+					<div class="cart-list-outoflist">
+						<img src="./image/products-outofstock.png" alt="">
+						<ul>
+							<li>清风欧元系列 清香型100抽</li>
+							<li>数量：<span>1</span>件</li>
+							<li>￥<span>4.90</span><span>（无货）</span></li>
+						</ul>
+					</div>
+					<div class="cart-list-outoflist">
+						<img src="./image/products-outofstock.png" alt="">
+						<ul>
+							<li>清风欧元系列 清香型100抽</li>
+							<li>数量：<span>1</span>件</li>
+							<li>￥<span>4.90</span><span>（无货）</span></li>
+						</ul>
+					</div>
+					<div class="cart-list-outoflist">
+						<img src="./image/products-outofstock.png" alt="">
+						<ul>
+							<li>清风欧元系列 清香型100抽</li>
+							<li>数量：<span>1</span>件</li>
+							<li>￥<span>4.90</span><span>（无货）</span></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="cart-common">
+			<h1 class="cart-title">支付方式</h1>
+			<div class="cart-total">
+				<h1>总计<span id="total-price">1489</span></h1>
+				<input type="button" value="提交订单">
+			</div>
+		</div>
+	</div>
+
+	<footer class="footer">
+		<p>
+			<a href="#">慕课简介</a>|<a href="#">慕课简介</a>|<a href="#">慕课简介</a>|<a href="#">慕课简介</a>|慕课热线：400-400-4000
+		</p>
+		<p>
+			Copyright&nbsp2006-2014 慕课网版权所以&nbsp&nbsp；其他的信息
+		</p>
+		<p>
+			<a href="#"><img src="image/logo_new.png" alt="logo"></a>
+		</p>
+	</footer>
+</body>
+<script src="./js/main.js"></script>
+<script>
+	// //图片点击轮播
+	// //方法1：
+	// $(".gm-ps-btm img").on("mouseover", changePhoto);
+	// function changePhoto() {
+	// 	var orginSrc = $(this).attr("src");
+	// 	$(".gm-ps-top img").attr("src", orginSrc);
+	// }
+
+	// //方法2：
+	// // $(".gm-ps-btm img").attr("onclick", "changePhoto(this)");
+	// // function changePhoto(that) {
+	// // 	var orginSrc = $(that).attr("src");
+	// // 	$(".gm-ps-top img").attr("src", orginSrc);
+	// // }
+
+	// //方法3：
+	// // $(".gm-ps-btm img").click(function() {
+	// // 	var orginSrc = $(this).attr("src");
+	// // 	$(".gm-ps-top img").attr("src", orginSrc);
+	// // })
+ //    //增加减少商品数量
+ //    function createChange(inputElement, decreaseClass, increaseClass) {
+	// 	return function (e) {
+	// 		e.preventDefault();
+	// 		var input = $(inputElement);
+	// 		var value = input.val();
+	// 		var num = Number(value);
+	// 		var className = $(this).attr("class");
+	// 		if(className == decreaseClass) {
+	// 			if (num <= 0) return false;
+	// 			num--;
+	// 		}else if(className == increaseClass) {
+	// 			if (num >= 9) return false;
+	// 			num ++;
+	// 		}
+	// 		input.val(num);
+	// 		$(".gpd-total").text(" 共" + num + "件");
+	// 	}
+	// }
+	// function numError() {
+	// 	var input = $(".gds-nums input");
+	// 	var value = input.val();
+	// 	var num = Number(value);
+	// 	if (num >=0 && num <= 9){
+	// 		return false;
+	// 	}else{
+	// 		alert("请输入正确的数值！");
+	// 		input.val(1);
+	// 	}
+	// }
+	// var changeNum = createChange(".gds-nums input", "gdsn-decrease", "gdsn-increase");
+	// $(".gdsn-decrease").on("click", changeNum);
+	// $(".gdsn-increase").on("click", changeNum);
+	// $(".gdsn-wrap-input input").on("blur", numError);
+
+	// //商品属性被选中
+	// $(".gd-sort li").on("click", function(){
+	// 	var that = $(this);
+	// 	that.attr("class", "active");
+	// 	that.siblings().removeClass("active");
+
+	// 	var color = $(".gdp-color");
+	// 	var type = $(".gdp-type");
+	// 	var innerText = that.text().toString();
+	// 	var parentClass = that.parent().attr("class");
+	// 	if(parentClass == "gds-color") {
+	// 		color.text(innerText + " ");
+	// 		color.addClass("gdp-selected-style");
+	// 	}else if(parentClass == "gds-type") {
+	// 		type.text(innerText);
+	// 		type.addClass("gdp-selected-style");
+	// 	}else{
+	// 		alert("something wrong");
+	// 	}
+	// 	$(".gpd-total").text(" 共1件");
+	// 	// alert(color + type);
+	// });
+
+	// // var box = document.getElementById("gd-purchase");
+	// // var style = window.getComputedStyle(box, null);
+	// // alert(style.getPropertyValue("width"));
+</script>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link type="text/css" rel="stylesheet" href="style/reset.css">
+	<link type="text/css" rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="./style/font-awesome/css/font-awesome.min.css">
+	<script src="./js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<header>
+		<div class="login-bar">
+			<div class="login-width">
+				<div class="cart-logo">
+					<a href="#"><img src="image/imooclogo.png" alt="imoocHomePage"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="signup-area">
+		<section class="signup-part1 signup-common">
+			<form action="" method="post">
+				<p>
+					<span>用户名:&nbsp;<abbr title="require">*</abbr></span>
+					<input type="text" placeholder="邮箱/用户名/手机" id="username" name="username">
+				</p>
+				<p>
+					<span>请设置密码:&nbsp;<abbr title="require">*</abbr></span>
+					<input type="password" id="password" name="password">
+				</p>
+				<p>
+					<span>请确认密码:&nbsp;<abbr title="require">*</abbr></span>
+					<input type="password" id="password2" name="password2">
+				</p>
+				<p>
+					<span>邮箱:&nbsp;<abbr title="require">*</abbr></span>
+					<input type="email" id="email" name="email">
+				</p>
+				<p>
+					<span>地址:&nbsp;<abbr title="require">*</abbr></span>
+					<input type="text" id="address" name="address">
+				</p>
+			</form>
+		</section>
+		<section class="signup-part2 signup-common">
+			<p>
+				<input type="checkbox" checked="checked" id="confirmable" name="confirmable">
+				<label for="confirmable">我已阅读并同意</label>
+				<a href="#">《用户注册协议》</a>
+			</p>
+			<p>
+				<button type="submit">登录</button>
+			</p>
+		</section>
+	</div>
+
+	<footer class="footer">
+		<p>
+			<a href="#">慕课简介</a>|<a href="#">慕课简介</a>|<a href="#">慕课简介</a>|<a href="#">慕课简介</a>|慕课热线：400-400-4000
+		</p>
+		<p>
+			Copyright&nbsp2006-2014 慕课网版权所以&nbsp&nbsp；其他的信息
+		</p>
+		<p>
+			<a href="#"><img src="image/logo_new.png" alt="logo"></a>
+		</p>
+	</footer>
+</body>
+<script>
+	// //图片点击轮播
+	// //方法1：
+	// $(".gm-ps-btm img").on("mouseover", changePhoto);
+	// function changePhoto() {
+	// 	var orginSrc = $(this).attr("src");
+	// 	$(".gm-ps-top img").attr("src", orginSrc);
+	// }
+
+	// //方法2：
+	// // $(".gm-ps-btm img").attr("onclick", "changePhoto(this)");
+	// // function changePhoto(that) {
+	// // 	var orginSrc = $(that).attr("src");
+	// // 	$(".gm-ps-top img").attr("src", orginSrc);
+	// // }
+
+	// //方法3：
+	// // $(".gm-ps-btm img").click(function() {
+	// // 	var orginSrc = $(this).attr("src");
+	// // 	$(".gm-ps-top img").attr("src", orginSrc);
+	// // })
+ //    //增加减少商品数量
+ //    function createChange(inputElement, decreaseClass, increaseClass) {
+	// 	return function (e) {
+	// 		e.preventDefault();
+	// 		var input = $(inputElement);
+	// 		var value = input.val();
+	// 		var num = Number(value);
+	// 		var className = $(this).attr("class");
+	// 		if(className == decreaseClass) {
+	// 			if (num <= 0) return false;
+	// 			num--;
+	// 		}else if(className == increaseClass) {
+	// 			if (num >= 9) return false;
+	// 			num ++;
+	// 		}
+	// 		input.val(num);
+	// 		$(".gpd-total").text(" 共" + num + "件");
+	// 	}
+	// }
+	// function numError() {
+	// 	var input = $(".gds-nums input");
+	// 	var value = input.val();
+	// 	var num = Number(value);
+	// 	if (num >=0 && num <= 9){
+	// 		return false;
+	// 	}else{
+	// 		alert("请输入正确的数值！");
+	// 		input.val(1);
+	// 	}
+	// }
+	// var changeNum = createChange(".gds-nums input", "gdsn-decrease", "gdsn-increase");
+	// $(".gdsn-decrease").on("click", changeNum);
+	// $(".gdsn-increase").on("click", changeNum);
+	// $(".gdsn-wrap-input input").on("blur", numError);
+
+	// //商品属性被选中
+	// $(".gd-sort li").on("click", function(){
+	// 	var that = $(this);
+	// 	that.attr("class", "active");
+	// 	that.siblings().removeClass("active");
+
+	// 	var color = $(".gdp-color");
+	// 	var type = $(".gdp-type");
+	// 	var innerText = that.text().toString();
+	// 	var parentClass = that.parent().attr("class");
+	// 	if(parentClass == "gds-color") {
+	// 		color.text(innerText + " ");
+	// 		color.addClass("gdp-selected-style");
+	// 	}else if(parentClass == "gds-type") {
+	// 		type.text(innerText);
+	// 		type.addClass("gdp-selected-style");
+	// 	}else{
+	// 		alert("something wrong");
+	// 	}
+	// 	$(".gpd-total").text(" 共1件");
+	// 	// alert(color + type);
+	// });
+
+	// // var box = document.getElementById("gd-purchase");
+	// // var style = window.getComputedStyle(box, null);
+	// // alert(style.getPropertyValue("width"));
+</script>
+<script src="./js/main.js"></script>
+</html>
